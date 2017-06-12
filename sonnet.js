@@ -25,3 +25,20 @@ var sonnetLength = wholeSonnet.length
 
 console.log("There are " + sonnetLength + " characters in this sonnet.");
 
+// 5. Replace the first occurence of the string "winter" with "yuletide"
+
+// JavaScript String replace() Method
+// The replace() method searches a string for a specified value, or a regular expression, 
+// and returns a new string where the specified values are replaced.
+
+// Note: If you are replacing a value (and not a regular expression), only the first instance
+// of the value will be replaced. To replace all occurrences of a specified value, use the 
+// global (g) modifier.
+
+// This method does not change the original string.
+
+var newSonnet = wholeSonnet.replace("winter", "yuletide");
+
+console.log(newSonnet);
+
+document.getElementById("sonnet").innerHTML = newSonnet;
