@@ -42,3 +42,24 @@ var newSonnet = wholeSonnet.replace("winter", "yuletide");
 console.log(newSonnet);
 
 document.getElementById("sonnet").innerHTML = newSonnet;
+
+// 6. Replace all occurences of the sting "the" with "a large"
+
+// Example of a global replacement:
+
+// var str = "Mr Blue has a blue house and a blue car";
+// var res = str.replace(/blue/g, "red");
+
+// The result of res will be:
+// Mr Blue has a red house and a red car
+
+var newSonnet2 = wholeSonnet.replace(/the/g, "a large");
+
+console.log(newSonnet2);
+
+// 7. Set the content of the sonnet div with the new string
+
+// document.getElementById("sonnet").innerHTML = newSonnet2;
+// Above does not show changes made using var newSonnet
+
+
