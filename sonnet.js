@@ -53,13 +53,13 @@ document.getElementById("sonnet").innerHTML = newSonnet;
 // The result of res will be:
 // Mr Blue has a red house and a red car
 
-var newSonnet2 = wholeSonnet.replace(/the/g, "a large");
+var newSonnet = newSonnet.replace(/the/g, "a large");
 
-console.log(newSonnet2);
+console.log(newSonnet);
 
 // 7. Set the content of the sonnet div with the new string
 
-// document.getElementById("sonnet").innerHTML = newSonnet2;
-// Above does not show changes made using var newSonnet
+document.getElementById("sonnet").innerHTML = newSonnet;
+
 
 
